@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.0em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover {
+    background-color: rgb(93, 2, 179);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento {
+    color: blueviolet;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+    margin: -10px;
+    margin-right: -10px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header .logo {
+    color: blueviolet;
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: blueviolet;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 120vh;
+    background-image: url("../assets/hero.jpg");
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: rgb(175, 13, 135);
+}
+
+#hero h1 {
+    color: rgb(175, 13, 135);
+}
+
+#hero button {
+    font-size: 1.75em;
+}
+
+
+
+#sobremi .container {
+    padding: 200px 12px;
+
+}
+
+#mis-programas {
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+#mis-programas .container {
+    padding: 200px 0px;
+    text-align: center;
+}
+
+#mis-programas h2 {
+    margin-top: 0;
+    font-size: 3em;
+}
+
+
+#mis-programas p {
+    display: none;
+}
+
+#mis-programas .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 12px;
+    border-radius: 15px;
+
+
+}
+
+.carta:first-child {
+    background-image: url("../assets/Educacion-Primaria.jpg");
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5));
+    color: white;
+
+
+}
+
+.carta:nth-child(2) {
+    background-image: url("../assets/bachiller.jpg");
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5));
+    color: black;
+
+
+
+}
+
+.carta:nth-child(3) {
+    background-image: url("../assets/nodo.jpg");
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5));
+    color: black;
+
+}
+
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li {
+    margin: 12px 0px;
+    font-weight: bold;
+}
+
+#final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-color: rgb(30, 30, 30);
+    color: white;
+
+}
+
+#final h2 {
+    font-size: 9vw;
+}
+
+#final button {
+    font-size: 5vw;
+}
+
+footer {
+    background-color: rgb(230, 230, 230, );
+}
+
+footer p {
+    margin: 0;
+    color: rgb(100, 100, 100);
+    padding: 12px;
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    justify-items: flex-end;
+}
+
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #sobre .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+        margin-bottom: 200px;
+
+
+    }
+
+    #sobre .texto {
+        width: 50%;
+        text-align: initial;
+        padding: 0px 30px;
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #sobre2 .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+        margin-bottom: 200px;
+
+
+    }
+
+    #sobre2 .texto {
+        width: 50%;
+        text-align: initial;
+        padding: 0px 30px;
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #sobre .img-container {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("../assets/aboutme.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+
+    }
+
+    #sobre2 .img-container2 {
+        background-image: url("../assets/misgustos.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+
+    }
+
+
+    #mis-programas .programas {
+        display: flex;
+        justify-content: center;
+        height: 160vh;
+    }
+
+    #mis-programas p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #mis-programas h3 {
+        margin-top: 0;
+
+    }
+
+    #mis-programas .carta {
+        padding: 15px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-color: white;
+
+    }
+
+    .carta:first-child {
+        background-image: url("/Educacion-Primaria.jpg");
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5));
+        color: black;
+
+
+    }
+
+    .carta:nth-child(2) {
+        background-image: url("/bachiller.jpg");
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5));
+        color: black;
+
+
+
+    }
+
+    .carta:nth-child(3) {
+        background-image: url("../assets/nodo.jpg");
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5));
+        color: black;
+
+    }
+
+    #caracteristicas {
+        background-image: url("../assets/caracteristicas.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: right;
+        margin-right: 250px;
+    }
+
+    #caracteristicas .container {
+        text-align: initial;
+    }
+
+    #caracteristicas ul {
+        margin-left: 100px;
+    }
+
+    #final h2 {
+
+
+        font-size: 5em;
+    }
+
+    #final button {
+        font-size: 2em;
+    }
+
+    footer .container {
+
+        justify-content: flex-end;
+    }
+
+    .redes {
+        margin-left: 20px;
+
+        justify-items: center;
+        font-weight: bold;
+
+    }
+
+}
